@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Propuestas · Festival ONES</title>
+    <meta name="description" content="Te presentamos nuestras propuestas">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+cml">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <a class="salto" href="#contenido">Saltar al contenido</a>
+    <header class="cabecera-sitio">
+        <div class="contenedor">
+            <nav aria-label="Principal">
+                <details class="menu-movil">
+                    <summary>Menú</summary>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="artistas.html">Artistas</a></li>
+                        <li><a href="horarios.html">Horarios</a></li>
+                        <li><a href="entradas.html">Entradas</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="propuestas.html" aria-current="page">Propuestas</a></li>
+                    </ul>
+                </details>
+            </nav>
+        </div>
+    </header>
+    <main id="contenido">
+        <section class="cabecera-hero">
+            <div class="contenedor">
+                <h1>Tienes una propuesta?</h1>
+                <section>
+                    <h2>Envía tu propuesta</h2>
+
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Indicanos los datos del grupo o artista</legend>
+                            <p>
+                                <label for="nombre">Nombre del grupo o artista (obligatorio)</label>
+                                <input type="text" id="nombre" name="nombre" required maxlength="80">
+                            </p>
+                            <p>
+                                <label for="representante">Persona de contacto (obligatorio)</label>
+                                <input type="text" id="representante" name="representante" required maxlength="80">
+                            </p>
+                            <p>
+                                <label for="email">Correo electrónico (obligatorio)</label>
+                                <input type="email" id="email" name="email" required maxlength="80">
+                            </p>
+                            <p>
+                                <label for="poblacion">Población de origen(obligatorio)</label>
+                                <input type="text" id="poblacion" name="poblacion" required maxlength="20">
+                            </p>
+                            <p>
+                                <label for="integrantes">Número de integrantes</label>
+                                <input type="number" id="integrantes" name="integrantes" min="1" max="20" step="1">
+                            </p>
+                            <p>
+                                <label for="estilo">Estilo musical (obligatorio)</label>
+                                <select id="estilo" name="estilo" required>
+                                    <option value="">Elige un estilo</option>
+                                    <option value="folk">Folk</option>
+                                    <option value="cancion">canción de autor</option>
+                                    <option value="flamenco">Flamenco</option>
+                                    <option value="electronica">Electrónica</option>
+                                    <option value="jazz">Jazz</option>
+                                    <option value="rock">Rock</option>
+                                    <option value="otros">Otros</option>
+                                </select>
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Trayectoria</legend>
+                            <p>
+                                <label for="grabacion">Enlace a audio o vídeo de muestra (obligatorio)</label>
+                                <input type="url" id="grabacion" name="grabacion" required placeholder="https://youtu.be/eFzXdjzKHWA">
+                            </p>
+                        </fieldset>
+                        <fieldset>
+                            <legend>¿Habéis tocado antes en ONES?</legend>
+                            <p>
+                                <input type="radio" id="tocado-si" name="tocado_antes" value="si">
+                                <label for="tocado-si">Sí</label>
+                            </p>
+                            <p>
+                                <input type="radio" id="tocado-no" name="tocado_antes" value="no" checked>
+                                <label for="tocado-no">No</label>
+                            </p>
+                            <p>
+                                <label for="biografia">Breve presentación o biografía (obligatorio)</label>
+                                <textarea id="biografia" name="biografia" rows="6" maxlength="800" required></textarea>
+                            </p>
+                        </fieldset>
+                            <p>
+                                <input type="checkbox" id="condiciones" name="condiciones" value="si" required>
+                                <label for="condiciones">Acepto las bases de la convocatoria (obligatorio)</label>
+                            </p>
+                            <button type="submit">Enviar propuesta</button>
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor">
+            <p>Festival ONES · Asociación Cultural Mar de Fondo · G-00000000
+            Playa de la Almadraba, Cap de l'Horta</p>
+            <a href="mailto:hola@festivalones.example">Enviar un email a hola@festivalones.example</a>
+            <a href="tel:900123456">llamar al 900 123 456</a>
+            <!-- Enlaces legales -->
+            <ul> 
+                <li>
+                    <a href="#">Aviso legal</a>
+                </li> 
+                <li>
+                    <a href="#">Política de privacidad</a>
+                </li> 
+            </ul>
+            <p>Organiza la Asociación Cultural Mar de Fondo con el apoyo del Ayuntamiento y la Diputación.</p>
+        </div>
+    </footer>
+</body>
